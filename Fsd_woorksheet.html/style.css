@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fb;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+}
+
+.header nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+}
+
+.hero-content p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    padding: 15px 45px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* FEATURES */
+.features {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* PRICING */
+.pricing {
+    background: linear-gradient(to right, #e0f7ff, #f9fcff);
+    padding: 90px 40px;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    background: white;
+    padding: 40px;
+    width: 260px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.price {
+    font-size: 32px;
+    color: #2196f3;
+    margin: 15px 0;
+}
+
+.highlight {
+    transform: scale(1.08);
+    border: 3px solid #ff9800;
+}
+
+/* ENDING */
+.ending {
+    height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials span {
+    margin: 0 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
